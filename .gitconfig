@@ -1,0 +1,18 @@
+[user]
+name = Manuel Groh
+email = manuel.groh@mni.thm.de
+
+[push]
+default = tacking
+
+[core]
+excludesfile = ~/.gitignore
+
+[github]
+user = grohmanu
+
+[alias]
+st = status
+ci = commit
+co = checkout
+di = diff
