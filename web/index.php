@@ -1,33 +1,16 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
-
-use Symfony\Component\HttpFoundation\Request;
-
-$app = new Silex\Application();
-
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__ . '/../resources/twig'
-));
-
-$app->register(new SilexAssetic\AsseticServiceProvider());
-
-$app['assetic.path_to_web'] = __DIR__;
-$app['assetic.options'] = array(
-        'auto_dump_assets' => true,
-        'debug' => false
-    );
-$app['assetic.filter_manager'] = $app->share(
-    $app->extend('assetic.filter_manager', function($fm, $app) {
-        $fm->set('cssmin', new Assetic\Filter\CssMinFilter());
-
-        return $fm;
-    })
-);
-
-$app->get('/', function() use ($app) {
-    $domain = isset($_ENV['DOMAIN']) ? $_ENV['DOMAIN'] : 'cloudcontrolled.com';
-    return $app['twig']->render('hello.twig', array('domain' => $domain));
-});
-
-$app->run();
+?>
+<html>
+<head>
+    <link href="assets/css/all.css" type="text/css" rel="stylesheet" />
+    <title>Hello World!</title>
+</head>
+<body>
+  <strong>Hello world, I'm a Homepage!</strong>
+  <footer>
+    Coming from the <a href="https://doc.cloudcontrolled.com/Quickstart">Quickstart</a>?
+    Check out <a href="https://doc.cloudcontrolled.com/Guides/PHP/HelloWorld">the explanation</a>.
+  </footer>
+</body>
+</html>
