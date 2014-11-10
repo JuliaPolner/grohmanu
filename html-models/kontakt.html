@@ -1,0 +1,196 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<body>
+	<section id="content-main">
+
+		<!-- Article -->
+		<article class="article">
+			<h1>##Kontakt##</h1>
+			<h4>Pflichtfelder sind mit einem * markiert.</h4>
+
+			<h3>Bitte geben Sie Ihren Nachnamen an.</h3>
+
+			<hr />
+
+			<!-- Formular-id und -name nur nach Ruecksprache mit HTML aendern (styleabhaengig) -->
+			<div class="form">
+				<form title="Formular f&uuml;r die Kontaktaufnahme"
+					name="formcontact" id="formcontact" method="post" action="#">
+					<fieldset>
+						<legend>Empf&auml;nger</legend>
+
+						<div class="formitem">
+							<div class="itemLabel">
+								<label for="empfaenger" id="lempfaenger" class="toplabel">Empf&auml;nger:</label>
+							</div>
+							<div class="itemContent">
+								<select name="empfaenger" id="empfaenger" class="formElement">
+									<option>##SPD Ortsverein Musterhausen##</option>
+									<optgroup label="Personen">
+										<option value="0">##Vorname Name, Funktion##</option>
+										<option value="1">##Vorname Name, Funktion##</option>
+										<option value="2">##Vorname Name, Funktion##</option>
+									</optgroup>
+
+									<optgroup label="Service">
+										<option value="3">##Service 1##</option>
+										<option value="4">##Service 2##</option>
+										<option value="5">##Service 3##</option>
+									</optgroup>
+
+								</select>
+							</div>
+							<!-- itemContent -->
+						</div>
+						<!-- formitem -->
+					</fieldset>
+
+					<fieldset>
+						<legend>Ihre Nachricht</legend>
+						<div class="formitem">
+							<div class="itemLabel">
+								<label for="tTitle" id="ltTitle" class="toplabel">Betreff:</label>
+							</div>
+							<div class="itemContent">
+								<input id="tTitle" name="tTitle" size="68"
+									title="Geben Sie hier bitte das Thema Ihrer Mitteilung ein."
+									class="formElement" type="text">
+							</div>
+						</div>
+
+						<div class="formitem">
+							<div class="itemLabel">
+								<label for="tMessage" id="ltMessage" class="toplabel">Mitteilung
+									<abbr title="Pflichtfeld">*</abbr>:
+								</label>
+							</div>
+							<div class="itemContent">
+								<textarea id="tMessage" name="tMessage" rows="10" cols="64"
+									class="formElement"></textarea>
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Kontaktdaten</legend>
+
+						<!-- Beispiel FEHLER: -->
+						<div class="formitem error">
+							<div class="itemLabel">
+								<label for="sName" id="lsName" class="toplabel">Name <abbr
+									title="Pflichtfeld">*</abbr>:
+								</label>
+							</div>
+							<div class="itemContent">
+								<input id="sName" name="sName" size="68"
+									title="Geben Sie hier bitte Ihren Nachnamen ein."
+									class="formElement" type="text">
+							</div>
+						</div>
+
+						<div class="formitem">
+							<div class="itemLabel">
+								<label for="fName" id="lfName" class="toplabel">Vorname
+									<abbr title="Pflichtfeld">*</abbr>:
+								</label>
+							</div>
+							<div class="itemContent">
+								<input id="fName" name="fName" size="68"
+									title="Geben Sie hier bitte Ihren Vornamen ein."
+									class="formElement" type="text">
+							</div>
+						</div>
+
+						<div class="formitem">
+							<div class="itemLabel">
+								<label for="uStreet" id="luStreet" class="toplabel">Stra&szlig;e:</label>
+							</div>
+							<div class="itemContent">
+								<input id="uStreet" name="uStreet" size="68"
+									title="Geben Sie hier bitte Ihre Stra&szlig;e ein."
+									class="formElement" type="text">
+							</div>
+						</div>
+
+						<div class="formitem">
+							<div class="itemLabel">
+								<label for="city" id="lcity" class="toplabel"><abbr
+									title="Postleitzahl">PLZ</abbr> / Ort:</label>
+							</div>
+							<div class="itemContent">
+								<input id="city" name="city" size="68"
+									title="Geben Sie hier bitte Ihre Postleitzahl und Ihren Wohnort ein."
+									class="formElement" type="text">
+							</div>
+						</div>
+
+						<div class="formitem">
+							<div class="itemLabel">
+								<label for="email" id="lemail" class="toplabel">E-Mail-Adresse
+									<abbr title="Pflichtfeld">*</abbr>:
+								</label>
+							</div>
+							<div class="itemContent">
+								<input id="email" name="email" size="68"
+									title="Geben Sie hier bitte Ihre E-Mail-Adresse ein."
+									class="formElement" type="text">
+							</div>
+						</div>
+
+						<div class="formitem">
+							<div class="itemLabel">
+								<label for="orga" id="lorga" class="toplabel">Organisation
+									/ Funktion:</label>
+							</div>
+							<div class="itemContent">
+								<input id="orga" name="orga" size="68"
+									title="Geben Sie hier bitte Ihre Organisation bzw. Funktion ein."
+									class="formElement" type="text">
+							</div>
+						</div>
+
+						<div class="formitem">
+							<div class="itemLabel">
+								<label for="phone" id="lphone" class="toplabel">Mobiltelefon:</label>
+							</div>
+							<div class="itemContent">
+								<input id="phone" name="phone" size="68"
+									title="Geben Sie hier bitte Ihre Funknummer ein."
+									class="formElement" type="text">
+							</div>
+						</div>
+					</fieldset>
+
+					<div class="formitem">
+						<div class="itemContent">
+							<div class="checkbox">
+								<label for="consent" id="lconsent" class="toplabel"> <input
+									id="consent" name="consent" value="ja" class="formElement"
+									type="checkbox"> <span> <strong>Einverst&auml;ndniserkl&auml;rung<br /></strong>
+									<!-- Bitte das [br] im [strong] lassen --> ##Ich bin damit
+										einverstanden, dass meine personenbezogenen Daten unter
+										strikter Beachtung des gesetzlichen Datenschutzes gespeichert
+										werden k&ouml;nnen, um mich &uuml;ber Veranstaltungen oder
+										aktuelle Themen zu informieren. Meine Einwilligung kann ich
+										jederzeit widerrufen.##
+								</span>
+								</label>
+							</div>
+							<!-- .checkbox -->
+						</div>
+						<!-- .itemContent -->
+					</div>
+					<!-- .formitem -->
+
+					<div class="formitem" id="sendButton">
+						<input id="finish" name="finish" value="Formular absenden"
+							class="submit" type="submit">
+					</div>
+				</form>
+			</div>
+
+
+		</article>
+	</section>
+</body>
+</html>
