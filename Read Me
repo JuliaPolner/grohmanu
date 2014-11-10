@@ -1,3 +1,12 @@
+Hinweise zur v.2:
+-Index wurde zu PHP-Seite
+-navi.js wurde gelöscht
+-Seiten werden via get-Parameter geladen
+
+Hinweise zur v.1;
+-PrettyPhoto wurde hinzugefügt
+-Die Navigation wurde in Style und Inhalt angepasst.
+
 Hinweise zur v.0:
 -<a>...</a> sind KEINE Links mit href="..." mehr! Sie werden per navi.js bedient.
--Die Footerlinks sind mit scrolltop-Funktion ausgestattet.
+-Die Footerlinks wurden mit scrolltop-Funktion ausgestattet.

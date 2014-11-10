@@ -1,0 +1,85 @@
+<article class="article">
+	<h1>Kontakt</h1>
+	<hr />
+	<div class="form">
+		<form title="Formular für die Kontaktaufnahme" name="formcontact"
+			id="formcontact" method="post" action="index.php?site=kontakt-send">
+			<fieldset>
+				<legend>Ihre Nachricht</legend>
+				<div class="formitem">
+					<div class="itemLabel">
+						<label for="tTitle" id="ltTitle" class="toplabel">Betreff:</label>
+					</div>
+					<div class="itemContent">
+						<input id="tTitle" name="tTitle" size="68"
+							placeholder="Geben Sie hier bitte das Thema Ihrer Mitteilung ein."
+							class="formElement" type="text" required />
+					</div>
+				</div>
+
+				<div class="formitem">
+					<div class="itemLabel">
+						<label for="tMessage" id="ltMessage" class="toplabel">Mitteilung</label>
+					</div>
+					<div class="itemContent">
+						<textarea id="tMessage" name="tMessage" rows="10" cols="64"
+							class="formElement"
+							placeholder="Geben Sie hier bitte Ihre Mitteilung ein."></textarea>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Kontaktdaten</legend>
+				<div class="formitem error">
+					<div class="itemLabel">
+						<label for="sName" id="lsName" class="toplabel">Name:</label>
+					</div>
+					<div class="itemContent">
+						<input id="sName" name="sName" size="68"
+							placeholder="Geben Sie hier bitte Ihren Nachnamen ein."
+							class="formElement" type="text" required />
+					</div>
+				</div>
+
+				<div class="formitem">
+					<div class="itemLabel">
+						<label for="fName" id="lfName" class="toplabel">Vorname:</label>
+					</div>
+					<div class="itemContent">
+						<input id="fName" name="fName" size="68"
+							placeholder="Geben Sie hier bitte Ihren Vornamen ein."
+							class="formElement" type="text" required />
+					</div>
+				</div>
+
+				<div class="formitem">
+					<div class="itemLabel">
+						<label for="email" id="lemail" class="toplabel">E-Mail-Adresse:</label>
+					</div>
+					<div class="itemContent">
+						<input id="email" name="email" size="68"
+							placeholder="Geben Sie hier bitte Ihre E-Mail-Adresse ein."
+							class="formElement" type="email" required />
+					</div>
+				</div>
+
+				<div class="formitem">
+					<div class="itemLabel">
+						<label for="phone" id="lphone" class="toplabel">Telefonnummer:</label>
+					</div>
+					<div class="itemContent">
+						<input id="phone" name="phone" size="68"
+							placeholder="Geben Sie hier bitte Ihre Telefonnummer ein."
+							class="formElement" type="tel">
+					</div>
+				</div>
+			</fieldset>
+
+			<div class="formitem" id="sendButton">
+				<input id="finish" name="finish" value="Formular absenden"
+					class="submit" type="submit">
+			</div>
+		</form>
+	</div>
+</article>

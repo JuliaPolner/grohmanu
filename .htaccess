@@ -1,0 +1,26 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^index$ index.php [NC]
+RewriteRule ^aktuell$ index.php?site=aktuell [NC]
+RewriteRule ^lahnau$ index.php?site=lahnau [NC]
+RewriteRule ^verein$ index.php?site=verein [NC]
+RewriteRule ^fraktion$ index.php?site=fraktion [NC]
+RewriteRule ^vorstand$ index.php?site=vorstand [NC]
+RewriteRule ^region$ index.php?site=region [NC]
+RewriteRule ^ueberregional$ index.php?site=ueberregional [NC]
+RewriteRule ^thema1$ index.php?site=thema1 [NC]
+RewriteRule ^thema2$ index.php?site=thema2 [NC]
+RewriteRule ^thema3$ index.php?site=thema3 [NC]
+RewriteRule ^thema4$ index.php?site=thema4 [NC]
+RewriteRule ^thema5$ index.php?site=thema5 [NC]
+RewriteRule ^kontakt$ index.php?site=kontakt [NC]
+RewriteRule ^kontakt-send$ index.php?site=kontakt-send [NC]
+RewriteRule ^termine$ index.php?site=termine [NC]
+RewriteRule ^downloads$ index.php?site=downloads [NC]
+RewriteRule ^newsletter$ index.php?site=newsletter [NC]
+RewriteRule ^newsletter-send$ index.php?site=newsletter-send [NC]
+RewriteRule ^rssfeed$ index.php?site=rssfeed [NC]
+RewriteRule ^impressum$ index.php?site=impressum [NC]
+
+RewriteRule ^bilder/(.*) img/res/$1 [NC]

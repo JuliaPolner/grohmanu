@@ -1,0 +1,33 @@
+<article class="article">
+	<h1>Newsletter</h1>
+	<hr />
+	<div>
+	<h2>Newsletter vom 02.08.14</h2>
+	<h4>Betreff</h4>
+	<p>Hier kommt ganz viel Text</p>
+	</div>
+	<hr/>
+	<h2>Anmeldung zum Newsletter</h2>
+	<div class="form">
+		<form title="Formular für die Anmeldung zum Newsletter" name="formnewsletter"
+			id="formnewsletter" method="post" action="index.php?site=newsletter-send">
+			<fieldset>
+				<legend>Kontaktdaten</legend>
+				<div class="formitem">
+					<div class="itemLabel">
+						<label for="email" id="lemail" class="toplabel">E-Mail-Adresse:</label>
+					</div>
+					<div class="itemContent">
+						<input id="email" name="email" size="68"
+							placeholder="Geben Sie hier bitte Ihre E-Mail-Adresse ein."
+							class="formElement" type="email" required />
+					</div>
+				</div>
+			</fieldset>
+			<div class="formitem" id="sendButton">
+				<input id="finish" name="finish" value="Anmeldung absenden"
+					class="submit" type="submit">
+			</div>
+		</form>
+	</div>
+</article>

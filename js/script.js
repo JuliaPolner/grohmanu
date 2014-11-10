@@ -1,7 +1,4 @@
-jQuery(document).ready(function() {
-
-	$("#content-main").load("html-models/startseite.html");
-	
+jQuery(document).ready(function() {	
 	// handle flyout menu	
 	function flyoutMenuDown(){$(this).stop().addClass('active').find('.flyout').slideDown('fast');} 
 	function flyoutMenuUp(){$(this).stop().removeClass('active').find('.flyout').slideUp('fast');}
@@ -37,16 +34,7 @@ jQuery(document).ready(function() {
 		auto: true,
 		pause: 10000
 	});
-
-
-	// handle teaserslider
-	$('.teaserslider ul').bxSlider({
-		displaySlideQty: 3,
-		controls: true,
-		auto: false
-	});
-
-
+	
 	// handle article rating
 	$('.rating-stars').each(function(){
 
@@ -60,38 +48,4 @@ jQuery(document).ready(function() {
 			$(this).removeClass('vote-1').removeClass('vote-2').removeClass('vote-3').removeClass('vote-4').removeClass('vote-5');
 		});
 	});
-
-	// handle socialshareprivacy 
-	if($('#socialshareprivacy').length > 0){
-		$('#socialshareprivacy').socialSharePrivacy(); 
-	}
-
-	//handle navigation
-	navi();
-	/*$("#header-nav").find("a").css("cursor", "pointer");
-	
-	//Startseite
-	$("#navi-home").find("a").first().on("click", function() {
-		$("#content-main").load("html-models/startseite.html");
-	});
-	//Politik
-	$("#navi-politik").find("a").first().on("click", function() {
-		$("#content-main").load("html-models/standard_youtube.html");
-	});
-	//Partei
-	$("#navi-partei").find("a").first().on("click", function() {
-		$("#content-main").load("html-models/liste.html");
-	});
-	//Vor Ort
-	$("#navi-vorort").find("a").first().on("click", function() {
-		$("#content-main").load("html-models/kontakt.html");
-	});
-	//Presse
-	$("#navi-presse").find("a").first().on("click", function() {
-		$("#content-main").load("html-models/standard.html");
-	});
-	//Service
-	$("#navi-service").find("a").first().on("click", function() {
-		$("#content-main").load("html-models/liste.html");
-	});*/
 });
